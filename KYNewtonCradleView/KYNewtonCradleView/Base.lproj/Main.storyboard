@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +15,48 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="che-5W-GeL" userLabel="ball2">
+                                <rect key="frame" x="280" y="280" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="SZj-MI-vIb"/>
+                                    <constraint firstAttribute="height" constant="40" id="liF-YI-x8r"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnY-UM-xes" userLabel="ball3">
+                                <rect key="frame" x="320" y="280" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="O1v-R1-WqD"/>
+                                    <constraint firstAttribute="width" constant="40" id="lx0-qq-Xue"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDc-WG-zjm" userLabel="ball1">
+                                <rect key="frame" x="240" y="280" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Ha6-tJ-Hu0"/>
+                                    <constraint firstAttribute="height" constant="40" id="xtY-Iv-rVg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="che-5W-GeL" secondAttribute="centerY" id="3vD-1A-ApE"/>
+                            <constraint firstAttribute="centerY" secondItem="hDc-WG-zjm" secondAttribute="centerY" id="CgU-q5-DbF"/>
+                            <constraint firstItem="qnY-UM-xes" firstAttribute="leading" secondItem="che-5W-GeL" secondAttribute="trailing" id="NNi-cA-huW"/>
+                            <constraint firstItem="che-5W-GeL" firstAttribute="leading" secondItem="hDc-WG-zjm" secondAttribute="trailing" id="PWS-Uc-JBH"/>
+                            <constraint firstAttribute="centerY" secondItem="che-5W-GeL" secondAttribute="centerY" id="SB8-jh-FGM"/>
+                            <constraint firstAttribute="centerX" secondItem="che-5W-GeL" secondAttribute="centerX" id="aid-ih-B3O"/>
+                            <constraint firstAttribute="centerY" secondItem="qnY-UM-xes" secondAttribute="centerY" id="lk3-fM-qBX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ballView_1" destination="hDc-WG-zjm" id="e7S-EU-hLb"/>
+                        <outlet property="ballView_2" destination="che-5W-GeL" id="xse-EJ-pRX"/>
+                        <outlet property="ballView_3" destination="qnY-UM-xes" id="LIV-6d-agW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

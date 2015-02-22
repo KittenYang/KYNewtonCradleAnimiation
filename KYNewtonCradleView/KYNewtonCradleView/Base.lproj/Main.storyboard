@@ -16,21 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hDc-WG-zjm" userLabel="ball1">
-                                <rect key="frame" x="280" y="280" width="40" height="40"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDc-WG-zjm" userLabel="ball1">
+                                <rect key="frame" x="240" y="280" width="40" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Qwi-2b-6RN"/>
+                                    <constraint firstAttribute="height" constant="40" id="bmI-rM-aS1"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="che-5W-GeL" userLabel="ball2">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="che-5W-GeL" userLabel="ball2">
                                 <rect key="frame" x="280" y="280" width="40" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gAB-7p-ISf"/>
+                                    <constraint firstAttribute="width" constant="40" id="rcE-yv-k5U"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qnY-UM-xes" userLabel="ball3">
-                                <rect key="frame" x="280" y="280" width="40" height="40"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnY-UM-xes" userLabel="ball3">
+                                <rect key="frame" x="320" y="280" width="40" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MRZ-Bd-Ili"/>
+                                    <constraint firstAttribute="width" constant="40" id="NEr-Nm-Vlb"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="che-5W-GeL" secondAttribute="centerX" id="542-ik-zgR"/>
+                            <constraint firstAttribute="centerY" secondItem="qnY-UM-xes" secondAttribute="centerY" id="Im2-ET-37d"/>
+                            <constraint firstItem="che-5W-GeL" firstAttribute="leading" secondItem="hDc-WG-zjm" secondAttribute="trailing" id="KpK-Z1-x04"/>
+                            <constraint firstAttribute="centerY" secondItem="hDc-WG-zjm" secondAttribute="centerY" id="RRn-1x-4hh"/>
+                            <constraint firstItem="qnY-UM-xes" firstAttribute="leading" secondItem="che-5W-GeL" secondAttribute="trailing" id="S3q-N2-7si"/>
+                            <constraint firstAttribute="centerY" secondItem="che-5W-GeL" secondAttribute="centerY" id="VmO-KI-2ve"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ballView_1" destination="hDc-WG-zjm" id="DfM-yr-wsM"/>
+                        <outlet property="ballView_2" destination="che-5W-GeL" id="kQV-yh-SI2"/>
+                        <outlet property="ballView_3" destination="qnY-UM-xes" id="8pH-IK-KgR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

@@ -15,6 +15,7 @@
 		5F7FAE731A98CE6D00CEF622 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7FAE711A98CE6D00CEF622 /* LaunchScreen.xib */; };
 		5F7FAE7F1A98CE6E00CEF622 /* KYNewtonCradleViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FAE7E1A98CE6E00CEF622 /* KYNewtonCradleViewTests.m */; };
 		5F7FAE8A1A9A2E5C00CEF622 /* KYNewtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FAE891A9A2E5C00CEF622 /* KYNewtonView.m */; };
+		5F7FAE8D1A9A41A000CEF622 /* UntitledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FAE8C1A9A41A000CEF622 /* UntitledView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		5F7FAE7E1A98CE6E00CEF622 /* KYNewtonCradleViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYNewtonCradleViewTests.m; sourceTree = "<group>"; };
 		5F7FAE881A9A2E5C00CEF622 /* KYNewtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYNewtonView.h; sourceTree = "<group>"; };
 		5F7FAE891A9A2E5C00CEF622 /* KYNewtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYNewtonView.m; sourceTree = "<group>"; };
+		5F7FAE8B1A9A41A000CEF622 /* UntitledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UntitledView.h; sourceTree = "<group>"; };
+		5F7FAE8C1A9A41A000CEF622 /* UntitledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UntitledView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				5F7FAE691A98CE6D00CEF622 /* ViewController.h */,
 				5F7FAE6A1A98CE6D00CEF622 /* ViewController.m */,
 				5F7FAE6C1A98CE6D00CEF622 /* Main.storyboard */,
+				5F7FAE8B1A9A41A000CEF622 /* UntitledView.h */,
+				5F7FAE8C1A9A41A000CEF622 /* UntitledView.m */,
 				5F7FAE881A9A2E5C00CEF622 /* KYNewtonView.h */,
 				5F7FAE891A9A2E5C00CEF622 /* KYNewtonView.m */,
 				5F7FAE6F1A98CE6D00CEF622 /* Images.xcassets */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F7FAE6B1A98CE6D00CEF622 /* ViewController.m in Sources */,
+				5F7FAE8D1A9A41A000CEF622 /* UntitledView.m in Sources */,
 				5F7FAE681A98CE6D00CEF622 /* AppDelegate.m in Sources */,
 				5F7FAE651A98CE6D00CEF622 /* main.m in Sources */,
 				5F7FAE8A1A9A2E5C00CEF622 /* KYNewtonView.m in Sources */,

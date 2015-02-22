@@ -10,10 +10,5 @@
 
 @interface KYNewtonView : UIView
 
-@property (strong, nonatomic) IBOutlet UIView *ballView_1;
-@property (strong, nonatomic) IBOutlet UIView *ballView_2;
-@property (strong, nonatomic) IBOutlet UIView *ballView_3;
 
-
--(void)startAnimation;
 @end

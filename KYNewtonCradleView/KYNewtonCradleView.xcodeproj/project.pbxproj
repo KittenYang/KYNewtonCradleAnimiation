@@ -14,6 +14,7 @@
 		5F7FAE701A98CE6D00CEF622 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7FAE6F1A98CE6D00CEF622 /* Images.xcassets */; };
 		5F7FAE731A98CE6D00CEF622 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7FAE711A98CE6D00CEF622 /* LaunchScreen.xib */; };
 		5F7FAE7F1A98CE6E00CEF622 /* KYNewtonCradleViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FAE7E1A98CE6E00CEF622 /* KYNewtonCradleViewTests.m */; };
+		5F7FAE8A1A9A2E5C00CEF622 /* KYNewtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FAE891A9A2E5C00CEF622 /* KYNewtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		5F7FAE781A98CE6D00CEF622 /* KYNewtonCradleViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYNewtonCradleViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7FAE7D1A98CE6E00CEF622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F7FAE7E1A98CE6E00CEF622 /* KYNewtonCradleViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYNewtonCradleViewTests.m; sourceTree = "<group>"; };
+		5F7FAE881A9A2E5C00CEF622 /* KYNewtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYNewtonView.h; sourceTree = "<group>"; };
+		5F7FAE891A9A2E5C00CEF622 /* KYNewtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYNewtonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				5F7FAE691A98CE6D00CEF622 /* ViewController.h */,
 				5F7FAE6A1A98CE6D00CEF622 /* ViewController.m */,
 				5F7FAE6C1A98CE6D00CEF622 /* Main.storyboard */,
+				5F7FAE881A9A2E5C00CEF622 /* KYNewtonView.h */,
+				5F7FAE891A9A2E5C00CEF622 /* KYNewtonView.m */,
 				5F7FAE6F1A98CE6D00CEF622 /* Images.xcassets */,
 				5F7FAE711A98CE6D00CEF622 /* LaunchScreen.xib */,
 				5F7FAE621A98CE6D00CEF622 /* Supporting Files */,
@@ -222,6 +227,7 @@
 				5F7FAE6B1A98CE6D00CEF622 /* ViewController.m in Sources */,
 				5F7FAE681A98CE6D00CEF622 /* AppDelegate.m in Sources */,
 				5F7FAE651A98CE6D00CEF622 /* main.m in Sources */,
+				5F7FAE8A1A9A2E5C00CEF622 /* KYNewtonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

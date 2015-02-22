@@ -7,11 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "KYNewtonView.h"
 @interface ViewController ()
-@property (strong, nonatomic) IBOutlet UIView *ballView_1;
-@property (strong, nonatomic) IBOutlet UIView *ballView_2;
-@property (strong, nonatomic) IBOutlet UIView *ballView_3;
+
 
 @end
 
@@ -19,12 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.ballView_1.layer.cornerRadius = self.ballView_1.bounds.size.width / 2;
-    self.ballView_2.layer.cornerRadius = self.ballView_2.bounds.size.width / 2;
-    self.ballView_3.layer.cornerRadius = self.ballView_3.bounds.size.width / 2;
-}
+    
 
--(void)startAnimation{
+//    [self.kyview startAnimation];
     
 }
 

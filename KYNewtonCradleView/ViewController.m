@@ -79,17 +79,21 @@
 
 
 - (void)animationDidStart:(CAAnimation *)anim{
+    
     [UIView animateWithDuration:0.3 delay:0.1 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
         self.ballView_1.transform = CGAffineTransformMakeTranslation(-40, 0);
         self.ballView_1.transform = CGAffineTransformScale(self.ballView_1.transform, 0.5, 0.5);
         
         self.ballView_3.transform = CGAffineTransformMakeTranslation(40, 0);
         self.ballView_3.transform = CGAffineTransformScale(self.ballView_3.transform, 0.5, 0.5);
-
+        
+        self.ballView_2.transform = CGAffineTransformScale(self.ballView_2.transform, 0.5, 0.5);
+        
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.5 delay:0.0f options:UIViewAnimationOptionCurveEaseIn  | UIViewAnimationOptionBeginFromCurrentState animations:^{
+        [UIView animateWithDuration:0.3 delay:0.1 options:UIViewAnimationOptionCurveEaseIn  | UIViewAnimationOptionBeginFromCurrentState animations:^{
             self.ballView_1.transform = CGAffineTransformIdentity;
             self.ballView_3.transform = CGAffineTransformIdentity;
+            self.ballView_2.transform = CGAffineTransformIdentity;
             
         } completion:nil];
     }];

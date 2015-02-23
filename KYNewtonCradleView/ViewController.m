@@ -45,10 +45,11 @@
     animation.fillMode = kCAFillModeForwards;
     animation.calculationMode = kCAAnimationCubic;
     animation.repeatCount = 1;
-    animation.duration = 1.5;
+    animation.duration = 1.4;
     animation.delegate = self;
+//    animation.beginTime = 0.1;
     animation.autoreverses = NO;
-    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     
     
     [self.ballView_1.layer addAnimation:animation forKey:@"animation"];
@@ -69,10 +70,10 @@
     animation_2.removedOnCompletion = NO;
     animation_2.fillMode = kCAFillModeForwards;
     animation_2.repeatCount = 1;
-    animation_2.beginTime = 0;
-    animation_2.duration =1.5 ;
+//    animation_2.beginTime = 0.1;
+    animation_2.duration =1.4 ;
     animation_2.autoreverses = NO;
-    animation_2.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    animation_2.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     [self.ballView_3.layer addAnimation:animation_2 forKey:@"Rotation"];
 
 }
@@ -82,12 +83,13 @@
     
     [UIView animateWithDuration:0.3 delay:0.1 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
         self.ballView_1.transform = CGAffineTransformMakeTranslation(-40, 0);
-        self.ballView_1.transform = CGAffineTransformScale(self.ballView_1.transform, 0.5, 0.5);
+        self.ballView_1.transform = CGAffineTransformScale(self.ballView_1.transform, 0.7, 0.7);
         
         self.ballView_3.transform = CGAffineTransformMakeTranslation(40, 0);
-        self.ballView_3.transform = CGAffineTransformScale(self.ballView_3.transform, 0.5, 0.5);
+        self.ballView_3.transform = CGAffineTransformScale(self.ballView_3.transform, 0.7, 0.7);
         
-        self.ballView_2.transform = CGAffineTransformScale(self.ballView_2.transform, 0.5, 0.5);
+        self.ballView_2.transform = CGAffineTransformScale(self.ballView_2.transform, 0.7, 0.7);
+        
         
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:0.3 delay:0.1 options:UIViewAnimationOptionCurveEaseIn  | UIViewAnimationOptionBeginFromCurrentState animations:^{

@@ -79,7 +79,7 @@
 
 
 - (void)animationDidStart:(CAAnimation *)anim{
-    [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
+    [UIView animateWithDuration:0.3 delay:0.1 options:UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionBeginFromCurrentState animations:^{
         self.ballView_1.transform = CGAffineTransformMakeTranslation(-40, 0);
         self.ballView_1.transform = CGAffineTransformScale(self.ballView_1.transform, 0.5, 0.5);
         
